@@ -12,4 +12,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionalDomain.DomainLogic\FunctionalDomain.DomainLogic.fsproj" />
+    <ProjectReference Include="..\FunctionalDomain.DataAccess\FunctionalDomain.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

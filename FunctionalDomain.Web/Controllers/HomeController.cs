@@ -4,9 +4,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using FunctionalDomain.Models;
+using FunctionalDomain.DomainLogic;
+using FunctionalDomain.Web.Models;
 
-namespace FunctionalDomain.Controllers
+namespace FunctionalDomain.Web.Controllers
 {
     public class HomeController : Controller
     {

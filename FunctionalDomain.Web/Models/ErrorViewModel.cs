@@ -1,6 +1,6 @@
 using System;
 
-namespace FunctionalDomain.Models
+namespace FunctionalDomain.Web.Models
 {
     public class ErrorViewModel
     {
