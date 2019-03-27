@@ -18,10 +18,18 @@ namespace FunctionalDomain.Web.Controllers
 
         public IActionResult About()
         {
+            var xx = new KanbanBoard.Task("Title","Description", KanbanBoard.Status.Done, KanbanBoard.TaskType.Bug);
             ViewData["Message"] = "Functional domain";
 
             return View();
         }
+
+        public IActionResult AllTasks()
+        {
+            var result = new List<KanbanBoard.Task>();
+            result.Add(new KanbanBoard.Task("Title","Description", KanbanBoard.Status.Done, KanbanBoard.TaskType.Bug));
+            return Json(result);
+        }        
 
         public IActionResult Error()
         {

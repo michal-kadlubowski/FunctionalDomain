@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/FunctionalDomain.Web/FunctionalDomain.csproj"
+                "${workspaceFolder}/FunctionalDomain.Web/FunctionalDomain.Web.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
