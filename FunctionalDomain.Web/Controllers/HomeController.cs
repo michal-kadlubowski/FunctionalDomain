@@ -26,9 +26,10 @@ namespace FunctionalDomain.Web.Controllers
 
         public IActionResult AllTasks()
         {
-            var result = new List<KanbanBoard.Task>();
-            result.Add(new KanbanBoard.Task("Title","Description", KanbanBoard.Status.Done, KanbanBoard.TaskType.Bug));
-            return Json(result);
+            var tasks = new List<KanbanBoard.Task>();
+            tasks.Add(new KanbanBoard.Task("Title",null, KanbanBoard.Status.Done, KanbanBoard.TaskType.Bug));
+            var dtoResultList = tasks.Select(t => new TaskDto(t)).ToList(); 
+            return Json(dtoResultList);
         }        
 
         public IActionResult Error()
